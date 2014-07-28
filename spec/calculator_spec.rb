@@ -17,4 +17,12 @@ describe('calculator') do
   it('takes a division word equation and returns the answer') do
     calculator('What is 12 divided by 3?').should(eq(4))
   end
+
+  it('takes an exponential word equation and returns the answer') do
+    calculator('What is 2 to the 3rd power?').should(eq(8))
+  end
+
+  it('takes an equation with multiple operators and returns the answer') do
+    calculator('What is 4 plus 6 divided by 2?').should(eq(7))
+  end
 end
