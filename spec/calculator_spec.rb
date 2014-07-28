@@ -9,4 +9,8 @@ describe('calculator') do
   it('takes a subtraction word equation and returns the answer') do
     calculator('What is 10 minus 3?').should(eq(7))
   end
+
+  it('takes a multiplication word equation and returns the answer') do
+    calculator('What is 3 times 4?').should(eq(12))
+  end
 end
